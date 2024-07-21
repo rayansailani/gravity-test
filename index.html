@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gravity test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .ball {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            /* background-color: red; */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controls">
+        <label for="gravity-select">Select Gravity:</label>
+        <select id="gravity-select">
+            <option value="9.81">Earth (9.81 m/s²)</option>
+            <option value="1.625">Moon (1.625 m/s²)</option>
+            <option value="3.71">Mars (3.71 m/s²)</option>
+            <option value="24.79">Jupiter (24.79 m/s²)</option>
+            <option value="8.87">Venus (8.87 m/s²)</option>
+            <option value="10.44">Saturn (10.44 m/s²)</option>
+            <option value="8.69">Uranus (8.69 m/s²)</option>
+            <option value="11.15">Neptune (11.15 m/s²)</option>
+            <option value="274">Sun (274 m/s²)</option>
+        </select>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
